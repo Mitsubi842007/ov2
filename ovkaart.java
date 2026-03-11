@@ -6,8 +6,11 @@ public class OvKaart {
 	private double saldo;
 
 	// Constructor
-	public OvKaart(int kaartNummer, double saldo) {
-
+	public OvKaart(int kaartNummer, double saldo) 
+	{
+		this.kaartNummer = kaartNummer;
+		this.saldo =saldo ;
+			
 	}
 
 	// Functies
