@@ -7,13 +7,13 @@ public class OvKaart {
 
 	// Constructor
 	public OvKaart(int kaartNummer, double saldo) {
-		
+
 	}
 
 	// Functies
-	
+
 	public boolean inChecken() {
-		
+
 		return true;
 	}
 }
