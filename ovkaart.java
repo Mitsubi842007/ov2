@@ -4,6 +4,8 @@ public class OvKaart {
 	// Variabelen
 	private int kaartNummer;
 	private double saldo;
+	String onVoldoendeSaldo;
+	String voldoendeSaldo;
 
 	// Constructor
 	public OvKaart(int kaartNummer, double saldo) 
@@ -19,4 +21,6 @@ public class OvKaart {
 
 		return true;
 	}
+	if {}
+	else
 }

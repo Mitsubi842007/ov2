@@ -23,5 +23,10 @@ public void inckecken(OvKaart kaart) {
 		System.out.println("je bent uigecheckt");
 		break;
 	}
+	
+		
+		
+		
+	}
 }
-}
+
