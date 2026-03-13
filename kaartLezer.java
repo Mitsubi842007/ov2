@@ -8,11 +8,12 @@ public class kaartLezer {
 	// constructor
 
 	// functies
+	
 public void inckecken(OvKaart kaart) {
 	//als de kaartje geldig is en dan (gebeurtenis)
 	int instruction = 3;
 	switch (instruction) {
-	default:
+	default: 
 		System.out.println("zet hier je kaart");
 		break;
 	case 1:
