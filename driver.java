@@ -5,17 +5,16 @@ public class driver {
 	public static void main(String[] args) {
 		 OvKaart kaart1 = new OvKaart( 2 , 20.00); 
 		 kaartLezer paal = new kaartLezer();
-		 paal.inckecken(kaart1);
+		 paal.inckecken(kaart1); }
 		// Variabelen
 
 		// constructor
-public void kaart1
+public void kaart1 {
+	
+}
 
 
-		}
 
-		// functies
+// functies
 
-	}
-
-
+}

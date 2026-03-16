@@ -4,9 +4,7 @@ public class OvKaart {
 	// Variabelen
 	private int kaartNummer;
 	private double saldo;
-	private String onVoldoendeSaldo;
-	private String voldoendeSaldo;
-
+	
 	// Constructor
 	public OvKaart(int kaartNummer, double saldo) {
 		this.kaartNummer = kaartNummer;
@@ -15,18 +13,11 @@ public class OvKaart {
 	}
 
 	// Functies
-
-	public boolean inChecken() {
-
-		return true;
-		
-		
-		if (); {
+public double getSaldo()
+{
+		return this.saldo;
+}	
 			
-		} 
-		else {
-			
-		}
+		
 
 	}
-}
