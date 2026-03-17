@@ -1,16 +1,20 @@
 package oopKaart;
 
 public class kaartLezer {
-	
+
 	// Variabelen
 	private double instapTarief;
+	private boolean isKaartGeldig;
+	private boolean isSaldoGenoeg;
 
 	// constructor
-
+	public kaartLezer(double instapTarief) {
+		this.instapTarief = instapTarief;
+	}
 	// functies
-	
-public void inchecken(OvKaart kaart) {
-	//als de kaartje geldig is en dan (gebeurtenis)
+
+	public void inchecken(OvKaart kaart) {
+		// als de kaartje geldig is en dan (gebeurtenis)
 //	int instruction = 3;
 //	switch (instruction) {
 //	default: 
@@ -23,16 +27,22 @@ public void inchecken(OvKaart kaart) {
 //		System.out.println("je bent uigecheckt");
 //		break;
 //	}
-	kaart.getSaldo();
-	if (20.00 < 4.00) {
-		
-		
-	} 
-	
-	
-	else {}
-		
-		
+
+		if (kaart.getSaldo() > instapTarief) {
+			kaart.inchecken();
+			System.out.println("is ingecheckt");
+		}
+
+		else {
+			System.out.println("onvoldoende saldo");
+		}
+
+		if (isKaartGeldig = true) {
+			System.out.println("je kaart is geldig");
+		}
+
+		else {
+			System.out.println("kaart is niet geldig");
+		}
 	}
 }
-
