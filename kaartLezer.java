@@ -4,8 +4,7 @@ public class kaartLezer {
 
 	// Variabelen
 	private double instapTarief;
-	private boolean isKaartGeldig;
-	private boolean isSaldoGenoeg;
+	//private boolean isSaldoGenoeg;
 
 	// constructor
 	public kaartLezer(double instapTarief) {
@@ -31,18 +30,22 @@ public class kaartLezer {
 		if (kaart.getSaldo() > instapTarief) {
 			kaart.inchecken();
 			System.out.println("is ingecheckt");
+			
 		}
 
 		else {
 			System.out.println("onvoldoende saldo");
 		}
 
-		if (isKaartGeldig = true) {
+
+		if  (kaart.getisKaartGeldig() == true) {
 			System.out.println("je kaart is geldig");
 		}
 
 		else {
 			System.out.println("kaart is niet geldig");
 		}
-	}
+	
+}
+
 }

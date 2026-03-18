@@ -5,11 +5,13 @@ public class OvKaart {
 	private int kaartNummer;
 	private double saldo;
 	private boolean isIngeCheckt;
+	private boolean isKaartGeldig;
 
 	// Constructor
-	public OvKaart(int kaartNummer, double saldo) {
+	public OvKaart(int kaartNummer, double saldo,boolean isKaartGeldig) {
 		this.kaartNummer = kaartNummer;
 		this.saldo = saldo;
+		this.isKaartGeldig = true;
 
 	}
 
@@ -24,6 +26,10 @@ public class OvKaart {
 
 	public void inchecken() {
 		this.isIngeCheckt = true;
+	}
 
+	public boolean getisKaartGeldig() {
+		return this.isKaartGeldig;
+		
 	}
 }
