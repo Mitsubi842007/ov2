@@ -8,7 +8,7 @@ public class OvKaart {
 	private boolean isKaartGeldig;
 
 	// Constructor
-	public OvKaart(int kaartNummer, double saldo,boolean isKaartGeldig) {
+	public OvKaart(int kaartNummer, double saldo, boolean isKaartGeldig) {
 		this.kaartNummer = kaartNummer;
 		this.saldo = saldo;
 		this.isKaartGeldig = true;
@@ -30,6 +30,10 @@ public class OvKaart {
 
 	public boolean getisKaartGeldig() {
 		return this.isKaartGeldig;
-		
+
+	}
+
+	public void setSaldo(double bedrag) {
+		saldo += bedrag;
 	}
 }
