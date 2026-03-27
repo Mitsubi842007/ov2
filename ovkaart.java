@@ -6,6 +6,7 @@ public class OvKaart {
 	private double saldo;
 	private boolean isIngeCheckt;
 	private boolean isKaartGeldig;
+	private boolean isUitgeCheckt;
 
 	// Constructor
 	public OvKaart(int kaartNummer, double saldo, boolean isKaartGeldig) {

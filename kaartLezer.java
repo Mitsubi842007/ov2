@@ -34,7 +34,7 @@ public class kaartLezer {
 		}
 		System.out.println("je bent ingecheckt");
 		kaart.setSaldo(-instapTarief);
-		System.out.println("saldo na checken:" + kaart.getSaldo());
+		System.out.println("saldo nachecken:" + kaart.getSaldo());
 
 	}
 
