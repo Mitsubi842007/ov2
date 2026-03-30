@@ -4,16 +4,19 @@ public class kaartLezer {
 
 	// Variabelen
 	private double instapTarief;
+	private double uitstapTarief;
 	// private boolean isSaldoGenoeg;
 
 	// constructor
 	public kaartLezer(double instapTarief) {
 		this.instapTarief = instapTarief;
+
+	public kaartLezer(double uitstapTarief) {
+		this.uitstapTarief = uitstapTarief;
 	}
 	// functies
 
 	public void inchecken(OvKaart kaart) {
-
 
 		if (kaart.getSaldo() > instapTarief) {
 			kaart.inchecken();

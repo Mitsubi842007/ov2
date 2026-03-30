@@ -8,7 +8,8 @@ public class driver {
 		kaartLezer tweedePaal = new kaartLezer(5.00);
 		paal.inchecken(kaart1);
 		tweedePaal.inchecken(kaart1);
-		
+		Locatie uitcheckLocatie = new Locatie(3.0, 2.0);
+		 
 		// als de kaartje geldig is en dan (gebeurtenis)
 //		int instruction = 3;
 //		switch (instruction) {
