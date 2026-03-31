@@ -8,9 +8,9 @@ public class kaartLezer {
 	// private boolean isSaldoGenoeg;
 
 	// constructor
-	public kaartLezer(double instapTarief) {
-		this.instapTarief = instapTarief;
-
+	public kaartLezer() {
+		this.instapTarief = 20;
+	}
 	public kaartLezer(double uitstapTarief) {
 		this.uitstapTarief = uitstapTarief;
 	}

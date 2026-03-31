@@ -3,13 +3,13 @@ package oopKaart;
 public class driver {
 
 	public static void main(String[] args) {
-		OvKaart kaart1 = new OvKaart(2, 20.00, true);
-		kaartLezer paal = new kaartLezer(5.00);
+		OvKaart kaart1 = new OvKaart(2, 30.00, true);
+		kaartLezer paal = new kaartLezer();
 		kaartLezer tweedePaal = new kaartLezer(5.00);
 		paal.inchecken(kaart1);
 		tweedePaal.inchecken(kaart1);
-		Locatie uitcheckLocatie = new Locatie(3.0, 2.0);
-		 
+//		Locatie uitcheckLocatie = new Locatie(3.0, 2.0);
+//		UitcheckLocatie.locatie(Locatie);
 		// als de kaartje geldig is en dan (gebeurtenis)
 //		int instruction = 3;
 //		switch (instruction) {
@@ -23,6 +23,9 @@ public class driver {
 //			System.out.println("je bent uigecheckt");
 //			break;
 //		}
+
+//          System.out.println(" + station nijmegen");
+//          System.out.println(" + station heyendaal");
 	}
 
 }
