@@ -7,6 +7,7 @@ public class Locatie {
 	private double xPose;
 	public String locatieNaam;
 	public double locatieUitbereken;
+	private String uitcheckLocatie;
 
 	// constructor
 	public Locatie(double xPose, double yPose) {
