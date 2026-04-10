@@ -14,6 +14,7 @@ public class Locatie {
 		this.xPose = 3.0;
 		this.yPose = 2.0;
 
+		
 	}
 	
 	public double afstandBerekenen(Locatie eind) {
@@ -30,6 +31,8 @@ public class Locatie {
 		//B = this Y - eind.y
 		//C = A*A + B*B 
 		//D = Math.sqrt (ck);
+		
+		
 	}
 	
 }
