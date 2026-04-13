@@ -37,4 +37,23 @@ public class OvKaart {
 	public void setSaldo(double bedrag) {
 		saldo += bedrag;
 	}
+
+	// Incheck-locatie support
+	private Locatie incheckLocatie;
+
+	public Locatie getIncheckLocatie() {
+		return this.incheckLocatie;
+	}
+
+	public void setIncheckLocatie(Locatie locatie) {
+		this.incheckLocatie = locatie;
+	}
+
+	public void uitchecken() {
+		this.isIngeCheckt = false;
+	}
+
+	public int getKaartnummer() {
+		return this.kaartNummer;
+	}
 }
