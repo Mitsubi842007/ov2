@@ -17,20 +17,21 @@ public class driver {
 
 	        // Al ingecheckt
 	        paal1.checkIn(kaart1);
+	        
 
-	        // Verlopen kaart
-	        OvKaart kaart2 = new OvKaart(50.0, LocalDate.of(2022, 1, 1), 1002);
-	        paal1.checkIn(kaart2);
+//	         Verlopen kaart
+//	        OvKaart kaart2 = new OvKaart(50.0, LocalDate.of(2022, 1, 1), 1002);
+//	        paal1.checkIn(kaart2);
+//
+//	         Onvoldoende saldo
+//	        OvKaart kaart3 = new OvKaart(1.0, LocalDate.of(2027, 1, 1), 1003);
+//	        paal1.checkIn(kaart3);
 
-	        // Onvoldoende saldo
-	        OvKaart kaart3 = new OvKaart(1.0, LocalDate.of(2027, 1, 1), 1003);
-	        paal1.checkIn(kaart3);
-
-	        // Uitchecken
+	        //Uitchecken
 	        paal2.checkUit(kaart1);
 
 	        // Nog niet ingecheckt
-	        OvKaart kaart4 = new OvKaart(50.0, LocalDate.of(2027,1,1), 1004);
-	        paal2.checkUit(kaart4);
+//	        OvKaart kaart4 = new OvKaart(50.0, LocalDate.of(2027,1,1), 1004);
+//	        paal2.checkUit(kaart4);
 	    }
 	}

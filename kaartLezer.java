@@ -64,7 +64,7 @@ public class kaartLezer {
 	            double deltaX = this.locatie.getX() - locatie.getX();
 	            double deltaY = this.locatie.getY() - locatie.getY();
 	            double afstand = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-	            double kosten = (afstand * 10) * this.prijsPerKm;
+	            double kosten = Math.round(((afstand * 10) * this.prijsPerKm) * 100.0) / 100.0;
 	            kaart.setSaldo(-kosten);
 	            kaart.setIncheckLocatie(null);
 	            System.out.println("Je saldo is: " + kaart.getSaldo());
