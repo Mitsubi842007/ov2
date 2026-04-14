@@ -2,37 +2,36 @@ package oopKaart;
 
 public class Locatie {
 
-//Variabelen
-	private double yPose;
-	private double xPose;
-	public String locatieNaam;
-	public double locatieUitbereken;
-	private String uitcheckLocatie;
+    private String naam;
+    private double x;
+    private double y;
 
-	// constructor
-	public Locatie(double xPose, double yPose) {
-		this.xPose = 3.0;
-		this.yPose = 2.0;
+    // Constructor zonder naam
+    public Locatie(double x, double y) {
+        this("", x, y);
+    }
 
-		
-	}
-	
-	public double afstandBerekenen(Locatie eind) {
-		
-		double afstand =0;
-		double a = xPose - eind.xPose;
-		double b = yPose - eind.yPose;
-		double c = a * a + b * b;
-		afstand = Math.sqrt(c);
-//		this.xPose;
-	//	eind.xPose
-		return afstand;
-		//A = this x - eind.x 
-		//B = this Y - eind.y
-		//C = A*A + B*B 
-		//D = Math.sqrt (ck);
-		
-		
-	}
-	
+    // Constructor met naam
+    public Locatie(String naam, double x, double y) {
+        this.naam = naam;
+        this.x = x;
+        this.y = y;
+    }
+
+    // Getters en setters
+    public String getNaam() { return naam; }
+    public void setNaam(String naam) { this.naam = naam; }
+
+    public double getX() { return x; }
+    public void setX(double x) { this.x = x; }
+
+    public double getY() { return y; }
+    public void setY(double y) { this.y = y; }
+
+    // Afstand berekenen tussen twee locaties
+    public double afstandBerekenen(Locatie eind) {
+        double x = this.x - eind.x;
+        double y = this.y - eind.y;
+        return Math.sqrt(x * x + y * y);
+    }
 }
