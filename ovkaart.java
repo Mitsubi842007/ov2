@@ -1,34 +1,50 @@
 package oopKaart;
+
 import java.time.LocalDate;
+
 public class OvKaart {
-	
-	
-		  private double saldo;
-		  private LocalDate vervalDatum;
-		  private int kaartnummer;
-		  private boolean ingecheckt;
-		  private Locatie incheckLocatie;
 
+	private double saldo;
+	private LocalDate vervalDatum;
+	private int kaartnummer;
+	private boolean ingecheckt;
+	private Locatie incheckLocatie;
 
-		  public OvKaart(double saldo, LocalDate geldig, int kaartnummer) {
-		    this.saldo = saldo;
-		    this.vervalDatum = geldig;
-		    this.kaartnummer = kaartnummer;
-		  }
+	public OvKaart(double saldo, LocalDate geldig, int kaartnummer) {
+		this.saldo = saldo;
+		this.vervalDatum = geldig;
+		this.kaartnummer = kaartnummer;
+	}
 
-		  public double getSaldo() {return saldo;}
+	public double getSaldo() {
+		return saldo;
+	}
 
-		  public void setSaldo(double bedrag) {saldo += bedrag;}
+	public void setSaldo(double bedrag) {
+		saldo += bedrag;
+	}
 
-		  public LocalDate getVervalDatum() {return vervalDatum;}
+	public LocalDate getVervalDatum() {
+		return vervalDatum;
+	}
 
-		  public int getKaartnummer() {return kaartnummer;}
+	public int getKaartnummer() {
+		return kaartnummer;
+	}
 
-		  public boolean isIngecheckt() {return ingecheckt;}
+	public boolean isIngecheckt() {
+		return ingecheckt;
+	}
 
-		  public void setIngecheckt(boolean ingecheckt) {this.ingecheckt = ingecheckt;}
+	public void setIngecheckt(boolean ingecheckt) {
+		this.ingecheckt = ingecheckt;
+	}
 
-		  public Locatie getIncheckLocatie() { return incheckLocatie; }
+	public Locatie getIncheckLocatie() {
+		return incheckLocatie;
+	}
 
-		  public void setIncheckLocatie(Locatie locatie) { this.incheckLocatie = locatie; }
-		}
+	public void setIncheckLocatie(Locatie locatie) {
+		this.incheckLocatie = locatie;
+	}
+}
