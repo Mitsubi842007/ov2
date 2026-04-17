@@ -1,10 +1,12 @@
 package oopKaart;
 
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class driver {
 
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		Locatie nijmegen = new Locatie("Nijmegen", 8.0, 8.0);
 		Locatie arnhem = new Locatie("Arnhem", 6.0, 7.0);
 		kaartLezer paal1 = new kaartLezer(5.00, nijmegen, 0.30);
@@ -31,5 +33,6 @@ public class driver {
 		// Nog niet ingecheckt
 //	        OvKaart kaart4 = new OvKaart(50.0, LocalDate.of(2027,1,1), 1004);
 //	        paal2.checkUit(kaart4);
+		sc.close();
 	}
 }

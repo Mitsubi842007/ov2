@@ -58,5 +58,6 @@ public class kaartLezer {
 			System.out.println();
 			kaart.setIngecheckt(false);
 		}
+		
 	}
 }
